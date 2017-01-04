@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#home'
+    get '/sessions/create' => 'sessions#create'
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.
