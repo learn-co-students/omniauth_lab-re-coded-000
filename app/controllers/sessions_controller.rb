@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
       user.name = auth['info']['name']
     end
     session[:user_id] = user.try(:id)
+    # session[:user_id] = user.id if user
   end
 
   def auth
